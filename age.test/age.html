@@ -2,38 +2,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculator</title>
+    <title>Valid For Driving</title>
   </head>
   <body>
-    <h1>BMI Calculator</h1>
-    <input placeholder="Height" type="number" id="height" />
-    <input placeholder="Weight" type="number" id="weight" />
-    <button onclick="cal()" id="calculate">Calculate</button>
-    <h1>
-      Your BMI is:- <span id="bmi"></span>, that means you are
-      <span id="status"></span>
-    </h1>
-  </body>
-  <script>
-    function cal(){
-   var height=document.getElementById("height").value;
-   var weight=document.getElementById("weight").value;
-   var studentName=document.getElementById("height").value;
-
-   var  bmi = weight/(height*height);
-
-   document.getElementById("bmi").innerText=bmi;
-   if(bmi<18.5){
-    document.getElementById("status").innerText="UnderWeight";
-   }else if (bmi >= 18.5 && bmi <= 24.9){
-    document.getElementById("status").innerText="Normal Weight";
-   }else if(bmi >= 25 && bmi <= 29.9){
-    document.getElementById("status").innerText="Overweight";
-   }else{
-    document.getElementById("status").innerText="Obese";
-   }
-   
+    <input placeholder="Type Your Age" type="number" id="Age" />
+    <button id="Validage">Verify</button>
+    <p id="18+"></p>
+    <p id="18-"></p>
+    <p id="18"></p>
+    <script>
+        document.querySelector("#Validage").addEventListener('click',Valid);
+        function Valid(){
+       var ValidAge=document.getElementById("Age").value;
+       if(ValidAge>18){
+        document.getElementById("18+").innerText="You can drive in India!";
+       }else if (ValidAge<18){
+        document.getElementById("18-").innerText="You can't drive in India";
+       }else{
+        document.getElementById("18").innerText="You are just old enough to drive in India!";
+       }
     }
-    
-  </script>
+      </script>
+  </body>
+  
 </html>
