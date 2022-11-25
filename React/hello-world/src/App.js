@@ -3,8 +3,8 @@ import './App.css';
 
 let name = "everyone";
 function App() {
-  return (
-    <>
+ return (
+  <>
     <nav>
       <li>home</li>
       <li>
