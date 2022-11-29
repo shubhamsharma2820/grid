@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import NameList from './Components.js/NameList'
 
-let name = "everyone";
-function App() {
- return (
-  <>
-    <nav>
-      <li>home</li>
-      <li>
-        about
-      </li>
-      <li>
-        lets start
-      </li>
-    </nav>
-    <div className="container">
-      <h1>hello {name}</h1>
-    </div>
-    </>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <br />
+        {/* <Hello />
+        <Greet name="Bruce" heroName="Batman">
+          <p>This is children props</p>
+        </Greet>
+        <Greet name="Clark" heroName="Superman">
+          <button>Action</button>
+        </Greet>
+        <Greet name="Diana" heroName="Wonder Woman" />
+        <Welcome name="Bruce" heroName="Batman" />
+        <Welcome name="Clark" heroName="Superman" />
+        <Welcome name="Diana" heroName="Wonder Woman" />
+        <Message message='Welcome Visitor' />
+        <Message message='Welcome Guest' />
+        <Counter />
+        <FunctionClick />
+        <ClassClick />
+        <EventBind />
+        <ParentComponent />
+        <UserGreeting /> */}
+        <NameList />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
