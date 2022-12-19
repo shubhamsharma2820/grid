@@ -1,3 +1,10 @@
 import React,{Component} from 'react';
 
-class login
+class login extends React.Component{
+    rendor(){
+        <div>
+
+        </div>
+    }
+}
+export default login;
