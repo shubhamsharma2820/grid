@@ -17,7 +17,7 @@ class login extends React.Component{
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="slider-feature-card">
-                                    <img src="assets/img/YMn8Xo1.png" alt=""/>
+                                    <img src="public/assets/img/YMn8Xo1.png" alt=""/>
                                     <h3 class="slider-title">Title Here</h3>
                                     <p class="slider-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, odio!</p>
                                 </div>
