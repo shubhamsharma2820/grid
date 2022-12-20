@@ -9,44 +9,45 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <script>
-        $('#newmember').click(function(){
-            $('.signup-form').addClass('login-form-active');
-            $('.login-form-1').removeClass('login-form-active');
-            $('.login-form-1').hide();
-            $('.header-title').text("Let's get started")
-        });
-        $('#signup').click(function(){
-            $('.general-form').addClass('login-form-active');
-            $('.signup-form').removeClass('login-form-active');
-            $('.signup-form').hide();
-            $('.header-title').hide();
-            $('.general-form').show();
-        });
-        $('#next').click(function(){
-            $('.general-form').removeClass('login-form-active');
-            $('.contact-details').addClass('login-form-active');
-            $('.general-form').hide();
-            $('.header-title').hide();
-            $('.contact-details').show();
-        });
-        $('#back').click(function(){
-            $('.general-form').addClass('login-form-active');
-            $('.contact-details').removeClass('login-form-active');
-            $('.general-form').show();
-            $('.contact-details').hide();
-            $('.header-title').hide();
-        });
-        $('#back-form').click(function(){
-            $('.general-form').removeClass('login-form-active');
-            $('.signup-form').addClass('login-form-active');
-            $('.general-form').hide();
-            $('.signup-form').show();
-            $('.header-title').hide();
-        });
-        
-    </script>
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script>
+      $('#newmember').click(function(){
+          $('.signup-form').addClass('login-form-active');
+          $('.login-form-1').removeClass('login-form-active');
+          $('.login-form-1').hide();
+          $('.header-title').text("Let's get started")
+      });
+      $('#signup').click(function(){
+          $('.general-form').addClass('login-form-active');
+          $('.signup-form').removeClass('login-form-active');
+          $('.signup-form').hide();
+          $('.header-title').hide();
+          $('.general-form').show();
+      });
+      $('#next').click(function(){
+          $('.general-form').removeClass('login-form-active');
+          $('.contact-details').addClass('login-form-active');
+          $('.general-form').hide();
+          $('.header-title').hide();
+          $('.contact-details').show();
+      });
+      $('#back').click(function(){
+          $('.general-form').addClass('login-form-active');
+          $('.contact-details').removeClass('login-form-active');
+          $('.general-form').show();
+          $('.contact-details').hide();
+          $('.header-title').hide();
+      });
+      $('#back-form').click(function(){
+          $('.general-form').removeClass('login-form-active');
+          $('.signup-form').addClass('login-form-active');
+          $('.general-form').hide();
+          $('.signup-form').show();
+          $('.header-title').hide();
+      });
+      
+  </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
