@@ -1,38 +1,244 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);
+
+body {
+    background: #f5f5f5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media only screen and (max-width: 767px) {
+    .hide-on-mobile {
+        display: none;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-box {
+    background: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin: 50px auto;
+    min-height: 700px;
+    -webkit-box-shadow: 0 2px 60px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 60px -5px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+    font-family: "Script MT";
+    font-size: 54px;
+    text-align: center;
+    color: #888888;
+    margin-bottom: 50px;
+}
+
+.logo .logo-font {
+    color: #3BC3FF;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        font-size: 34px;
+    }
+}
+
+.header-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.login-form .form-control {
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.login-form .form-group {
+    position: relative;
+}
+
+.login-form .form-group .forgot-password {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+}
+
+.login-form .btn {
+    border-radius: 0;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.login-form .btn.btn-primary {
+    background: #3BC3FF;
+    border-color: #31c0ff;
+}
+
+.slider-feature-card {
+    background: #fff;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+.slider-feature-card img {
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.slider-feature-card h3,
+.slider-feature-card p {
+    margin-bottom: 30px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+}
+.carousel-indicators {
+  bottom: -50px !important;
+}
+.general-form .form-control, .general-form .form-select, .contact-details .form-control, .contact-details .form-select {
+  margin-bottom: 10px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.general-form .btn.btn-primary.btn-block {
+  margin-top: 30px;
+}
+.general-form, .contact-details {
+  max-width: 400px;
+}
+.general-form h4, .contact-details h4 {
+  color: #3bc3ff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/*.contact-details {
+  background: #4a34d4;
+  padding: 8px 20px;
+}*/
+/*.contact-details .form-control, .contact-details .form-select {
+  background-color: transparent !important;
+  color: #fff;
+}*/
+/*.contact-details .form-control::placeholder, .contact-details h4, .contact-details .form-check .form-check-label a {
+    color: #fff !important;
+}*/
+.contact-details {
+  position: relative;
+}
+/*.contact-details .register-btn {
+  position: absolute;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}*/
+.contact-details .form-check {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+/*.contact-details .form-check .form-check-label {
+  color: #dbdbdb;
+  font-size: 14px;
+}*/
+.login-form {
+  transform: translateX(140%);
+  transition: all .4s linear;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.login-form-active {
+    transform: translateX(0) !important;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    z-index: 9;
+}
+.login-box {
+  overflow: hidden;
+}
+.header-title {
+  text-transform: uppercase;
+}
+.social-icon.d-flex {
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 40px;
+}
+.social-icon.d-flex a {
+  background: #3bc3ff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 15px;
+}
+.signup-with-btn {
+  border: 1px solid rgb(212, 210, 208) !important;
+  font-size: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.signup-with-btn svg {
+  margin-right: 8px;
+}
+.pervious-btn {
+  background: #f2f2f2 !important;
+  color: #333 !important;
+  border-color: #f2f2f2 !important;
+  box-shadow: none !important;
+}
+.login-form-prev {
+    transform: translateX(-120%);
+}
+.login-form-none {
+    transition: none !important;
+}
+.student-text {
+  color: #6c757d;
+font-size: 16px;
+margin: 15px 0;
+display: block;
+margin-bottom: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media (min-width: 767px) {
+    .col-sm-6.hide-on-mobile {
+  margin-top: 131px;
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 420px) {
+    .login-form {
+  max-width: 100% !important;
+}
+.login-box {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 }
