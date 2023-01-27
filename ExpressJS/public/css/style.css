@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+input {
+     width: 150%;
+     height: 20px;
+     margin-bottom: 12px;
+}
+select{
+    width: 155%;
+    height: 25px;
+     margin-bottom: 12px;
+}
+#add{
+    margin: 20px 0 0 100px;
+    padding: 7px 20px;
+    border: none;
+    background-color: aquamarine;
+}
+p{
+    margin: 0;
+}

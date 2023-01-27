@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    
+</style>
+<body>
+      <div>
+        <div>
+            <h1>Admin Panel</h1>
+         </div>
+         <div>
+            <form action="" id="form">
+                <p>Product Name :-</p>
+                <input id="name" type="text" placeholder="Product Name" required><br>
+                <p>Product Category :-</p>
+                <input id="category" type="text" placeholder="Category"><br>
+                <p>Product img :-</p>
+                <input id="image" type="text" placeholder="Image url" required><br>
+                <p>Product Price :-</p>
+                <input id="price" type="number" placeholder="Price" required><br>
+                <p>Product Gender :-</p>
+                <select name="Product Gender" id="gender">
+                    <option value="Gender">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br>
+                <p>Product Stock :-</p>
+                <select name="Stock" id="sold" required>
+                    <option value="true">False</option>
+                    <option value="false">True</option>
+                </select><br>
+                <button id="add" onclick="AddProduct()">Submit</button>
+             </form>
+         </div>
+      </div>    
+</body>
+</html>
+
+<!-- <script>
+    document.querySelector("form").addEventListener("submit",AddProduct);
+    var arr = JSON.parse(localStorage.getItem("Products")) || [];
+    function AddProduct(){
+          event.preventDefault();
+          var Product_name = document.getElementById("name").value;
+          var Product_category = document.getElementById("category").value; 
+          var Product_img = document.getElementById("image").value;
+          var Product_price = document.getElementById("price").value;
+          var Product_gender = document.getElementById("gender").value;
+          var Product_stock = document.getElementById("sold").value;
+
+          var  obj = {
+            Product_name : Product_name,
+            Product_category : Product_category,
+            Product_img : Product_img,
+            Product_price : Product_price,
+            Product_gender : Product_gender,
+            Product_stock : Product_stock,
+          };
+          arr.push(obj);
+
+          localStorage.setItem("Products",JSON.stringify(arr));
+          var Product_name = document.getElementById("name").value ="";
+          var Product_category = document.getElementById("category").value ="";
+          var Product_img = document.getElementById("image").value ="";
+          var Product_price = document.getElementById("price").value ="";
+          var Product_gender = document.getElementById("gender").value ="";
+          var Product_stock = document.getElementById("sold").value ="";
+
+
+    }
+</script> -->
