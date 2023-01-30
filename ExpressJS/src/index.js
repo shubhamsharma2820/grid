@@ -32,12 +32,32 @@
 const express = require("express");
 const  path = require("path");
 const app = express();
+const hbs = require("hbs");
 const port = 8000;
 
+
 //built in middleware
-console.log(path.join(__dirname, '../public'));
-const staticPath = path.join(__dirname, '../public');
-app.use(express.static(staticPath));
+//console.log(path.join(__dirname, '../public'));
+
+//to set the view engin
+
+app.set('view engine', 'hbs');
+const viewsPath = path.join(__dirname, "../views");
+const partialsPath = path.join(__dirname, "../views/Partials");
+//console.log(viewsPath);
+app.set("views", viewsPath);
+hbs.registerPartials(partialsPath);
+
+//template engine route
+app.get("/",(req,res) => {
+    res.render("index");
+});
+
+app.get("/about", (req,res) => {
+    res.render("about",{title:"about us"});
+});
+//const staticPath = path.join(__dirname, '../public');
+//app.use(express.static(staticPath));
 
 app.get("/",(req,res) =>{
     res.send("hello from the server");
