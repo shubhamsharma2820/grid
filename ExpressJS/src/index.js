@@ -56,6 +56,10 @@ app.get("/",(req,res) => {
 app.get("/about", (req,res) => {
     res.render("about",{title:"about us"});
 });
+
+app.get("*", (req, res) =>{
+    res.render("404", {errorcomment:"opps page is not found"});
+});
 //const staticPath = path.join(__dirname, '../public');
 //app.use(express.static(staticPath));
 
